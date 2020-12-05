@@ -15,4 +15,4 @@ def test_checking(fixtures):
         data = df.read()
 
     passports = day4.parse(data)
-    assert 2 == day4.check_missing(passports)
+    assert 2 == day4.check_missing(*passports)

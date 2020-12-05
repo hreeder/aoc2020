@@ -66,7 +66,7 @@ def validate_fields(*passports: list) -> int:
 
         try:
             int(hcl[1:], 16)
-        except:
+        except ValueError:
             continue
 
         ecl = passport['ecl']
@@ -79,7 +79,7 @@ def validate_fields(*passports: list) -> int:
 
         try:
             int(pid)
-        except:
+        except ValueError:
             continue
 
         valid += 1
