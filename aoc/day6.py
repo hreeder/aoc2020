@@ -15,13 +15,11 @@ def part1(data):
 
 
 def part2(data):
-    groups = data.split("\n\n")
     count = 0
 
-    for group in groups:
-        people = group.strip().split("\n")
+    for group in data.split("\n\n"):
         sets = []
-        for person in people:
+        for person in group.split():
             sets.append(set([question for question in person]))
 
         result = None
