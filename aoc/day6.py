@@ -18,9 +18,7 @@ def part2(data):
     count = 0
 
     for group in data.split("\n\n"):
-        sets = []
-        for person in group.split():
-            sets.append(set([question for question in person]))
+        sets = [{question for question in person} for person in group.split()]
 
         result = None
         for item in sets:
