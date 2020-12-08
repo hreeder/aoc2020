@@ -1,5 +1,4 @@
 {
-    "build": {
-        "dockerfile": "Dockerfile"
-    }
+	"name": "hreeder/aoc2020",
+	"dockerFile": "Dockerfile"
 }
